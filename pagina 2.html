@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 2 - Laboratorio 6</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Mi Sitio Web</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pagina1.html">Página 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="pagina2.html">Página 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pagina3.html">Página 3</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content-section">
+        <div class="container">
+            <h1 class="mb-4">Página 2: Comandos Básicos de Git</h1>
+            
+            <!-- Primer componente Bootstrap: Accordion -->
+            <div class="accordion mb-5" id="commandsAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Comandos de Configuración
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#commandsAccordion">
+                        <div class="accordion-body">
+                            <p><code>git config --global user.name "Tu Nombre"</code> - Establece el nombre de usuario para Git.</p>
+                            <p><code>git config --global user.email "tuemail@example.com"</code> - Establece el email para Git.</p>
+                            <p><code>git config --list</code> - Muestra la configuración actual de Git.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Comandos Básicos
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#commandsAccordion">
+                        <div class="accordion-body">
+                            <p><code>git init</code> - Inicializa un repositorio Git.</p>
+                            <p><code>git clone URL</code> - Clona un repositorio remoto.</p>
+                            <p><code>git status</code> - Muestra el estado actual del repositorio.</p>
+                            <p><code>git add archivo</code> - Añade archivos al área de preparación.</p>
+                            <p><code>git commit -m "mensaje"</code> - Confirma los cambios en el repositorio.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Comandos de Sincronización
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#commandsAccordion">
+                        <div class="accordion-body">
+                            <p><code>git push</code> - Envía tus cambios al repositorio remoto.</p>
+                            <p><code>git pull</code> - Obtiene los cambios del repositorio remoto.</p>
+                            <p><code>git fetch</code> - Descarga contenido del repositorio remoto sin fusionarlo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mb-4">
+                <div class="col-md-8">
+                    <h2>Ciclo de Vida de los Archivos en Git</h2>
+                    <p>En Git, los archivos pueden estar en cuatro estados diferentes: sin seguimiento (untracked), modificados (modified), preparados (staged) y confirmados (committed). Entender este ciclo de vida es fundamental para usar Git de manera efectiva.</p>
+                    
+                    <p>Cuando creas un nuevo archivo en tu repositorio, este comienza sin seguimiento. Git no lo monitoreará a menos que le digas explícitamente que lo haga con <code>git add</code>. Una vez añadido, el archivo está en el área de preparación, listo para ser confirmado.</p>
+                    
+                    <p>Después de hacer modificaciones a un archivo rastreado, necesitas prepararlo nuevamente con <code>git add</code> antes de poder confirmar los cambios. Finalmente, cuando haces un commit con <code>git commit</code>, los cambios se guardan en la base de datos de Git.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="https://via.placeholder.com/400x300?text=Git+Lifecycle" alt="Ciclo de vida en Git" class="img-fluid rounded">
+                </div>
+            </div>
+            
+            <!-- Segundo componente Bootstrap: Progress bars -->
+            <h2 class="mb-3">Dominio de Git</h2>
+            <div class="mb-4">
+                <div class="row align-items-center mb-2">
+                    <div class="col-sm-3">
+                        <span>Comandos básicos</span>
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="progress">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center mb-2">
+                    <div class="col-sm-3">
+                        <span>Ramificación</span>
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="progress">
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center mb-2">
+                    <div class="col-sm-3">
+                        <span>Resolución de conflictos</span>
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="progress">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center mb-2">
+                    <div class="col-sm-3">
+                        <span>Git avanzado</span>
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">40%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="img-section">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="https://via.placeholder.com/400x300?text=Git+Branch" alt="Git Branch" class="img-fluid rounded mb-3">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://via.placeholder.com/400x300?text=Git+Merge" alt="Git Merge" class="img-fluid rounded mb-3">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://via.placeholder.com/400x300?text=Git+Rebase" alt="Git Rebase" class="img-fluid rounded mb-3">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

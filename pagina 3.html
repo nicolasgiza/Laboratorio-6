@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 3 - Laboratorio 6</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Mi Sitio Web</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pagina1.html">Página 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pagina2.html">Página 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="pagina3.html">Página 3</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content-section">
+        <div class="container">
+            <h1 class="mb-4">Página 3: GitHub y Colaboración</h1>
+            
+            <!-- Primer componente Bootstrap: Jumbotron -->
+            <div class="p-5 mb-4 bg-light rounded-3">
+                <div class="container-fluid py-5">
+                    <h1 class="display-5 fw-bold">¡Colabora con GitHub!</h1>
+                    <p class="col-md-8 fs-4">GitHub es una plataforma que facilita la colaboración entre desarrolladores y permite compartir código, trabajar en equipo y contribuir a proyectos de código abierto.</p>
+                    <button class="btn btn-primary btn-lg" type="button">Aprende más</button>
+                </div>
+            </div>
+            
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <h2>¿Qué es GitHub?</h2>
+                    <p>GitHub es una plataforma basada en la web que utiliza Git como sistema de control de versiones. Proporciona control de acceso, seguimiento de errores, solicitudes de características, gestión de tareas y wikis para cada proyecto.</p>
+                    
+                    <p>Con más de 40 millones de usuarios y más de 100 millones de repositorios, GitHub se ha convertido en el mayor host de código fuente del mundo y en una parte esencial del desarrollo de software moderno.</p>
+                    
+                    <p>GitHub permite a los desarrolladores trabajar juntos en proyectos desde cualquier lugar, facilitando la colaboración remota y el desarrollo distribuido. Esto ha revolucionado la forma en que se crea el software en la actualidad.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://via.placeholder.com/600x400?text=GitHub" alt="GitHub Logo" class="img-fluid rounded">
+                </div>
+            </div>
+            
+            <!-- Segundo componente Bootstrap: Tabs -->
+            <ul class="nav nav-tabs mb-3" id="githubTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pull-tab" data-bs-toggle="tab" data-bs-target="#pull" type="button" role="tab" aria-controls="pull" aria-selected="true">Pull Requests</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="issues-tab" data-bs-toggle="tab" data-bs-target="#issues" type="button" role="tab" aria-controls="issues" aria-selected="false">Issues</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="actions-tab" data-bs-toggle="tab" data-bs-target="#actions" type="button" role="tab" aria-controls="actions" aria-selected="false">GitHub Actions</button>
+                </li>
+            </ul>
+            <div class="tab-content mb-5" id="githubTabsContent">
+                <div class="tab-pane fade show active" id="pull" role="tabpanel" aria-labelledby="pull-tab">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h3>Pull Requests</h3>
+                            <p>Las Pull Requests (PRs) son una forma de enviar contribuciones a un proyecto en GitHub. Permiten que los colaboradores revisen los cambios propuestos antes de fusionarlos con la rama principal.</p>
+                            <p>Cuando creas una Pull Request, estás proponiendo tus cambios y solicitando que alguien revise y extraiga tu contribución y la fusione en su rama. Las Pull Requests muestran las diferencias (diffs) de los contenidos de ambas ramas.</p>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="https://via.placeholder.com/300x200?text=Pull+Requests" class="img-fluid rounded" alt="Pull Requests">
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="issues" role="tabpanel" aria-labelledby="issues-tab">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h3>Issues</h3>
+                            <p>Las Issues son esencialmente elementos de seguimiento de tareas. Pueden representar errores, mejoras, tareas o cualquier tipo de discusión relacionada con el proyecto.</p>
+                            <p>Las Issues permiten a los colaboradores reportar problemas, sugerir mejoras o solicitar nuevas características. También facilitan la asignación de tareas y el seguimiento del progreso del proyecto.</p>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="https://via.placeholder.com/300x200?text=GitHub+Issues" class="img-fluid rounded" alt="GitHub Issues">
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="actions" role="tabpanel" aria-labelledby="actions-tab">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h3>GitHub Actions</h3>
+                            <p>GitHub Actions es una plataforma de integración continua y entrega continua (CI/CD) que permite automatizar tu flujo de trabajo de construcción, prueba y despliegue directamente desde GitHub.</p>
+                            <p>Con GitHub Actions, puedes automatizar cualquier parte de tu flujo de trabajo de desarrollo, desde pruebas hasta despliegues, y todo ello sin necesidad de herramientas externas.</p>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="https://via.placeholder.com/300x200?text=GitHub+Actions" class="img-fluid rounded" alt="GitHub Actions">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="img-section">
+                <h2>Beneficios de colaborar en GitHub</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="https://via.placeholder.com/400x300?text=Open+Source" alt="Open Source" class="img-fluid rounded mb-3">
+                        <h4>Contribución a proyectos de código abierto</h4>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://via.placeholder.com/400x300?text=Learning" alt="Aprendizaje" class="img-fluid rounded mb-3">
+                        <h4>Aprendizaje colaborativo</h4>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://via.placeholder.com/400x300?text=Portfolio" alt="Portafolio" class="img-fluid rounded mb-3">
+                        <h4>Construcción de un portafolio</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

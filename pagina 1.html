@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 1 - Laboratorio 6</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Mi Sitio Web</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="pagina1.html">Página 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pagina2.html">Página 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pagina3.html">Página 3</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content-section">
+        <div class="container">
+            <h1 class="mb-4">Página 1: Control de Versiones con Git</h1>
+            
+            <!-- Primer componente Bootstrap: Alerts -->
+            <div class="alert alert-primary" role="alert">
+                ¡Bienvenido a la Página 1! Aquí aprenderás sobre Git y control de versiones.
+            </div>
+            
+            <div class="row mb-4">
+                <div class="col-md-8">
+                    <h2>¿Qué es Git?</h2>
+                    <p>Git es un sistema de control de versiones distribuido diseñado para manejar todo, desde proyectos pequeños hasta muy grandes, con velocidad y eficiencia. Fue creado por Linus Torvalds en 2005 para el desarrollo del kernel de Linux.</p>
+                    
+                    <p>A diferencia de otros sistemas de control de versiones centralizados, Git permite que cada desarrollador tenga una copia completa del repositorio localmente, lo que facilita el trabajo sin conexión y mejora la velocidad de las operaciones.</p>
+                    
+                    <p>Con Git, puedes rastrear cambios en tu código, revertir a versiones anteriores, crear ramas para experimentar con nuevas ideas sin afectar el proyecto principal, y colaborar fácilmente con otros desarrolladores.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="https://via.placeholder.com/400x300?text=Git+Logo" alt="Git Logo" class="img-fluid rounded">
+                </div>
+            </div>
+            
+            <div class="img-section">
+                <h2>Flujo de trabajo básico en Git</h2>
+                <img src="https://via.placeholder.com/800x400?text=Git+Workflow" alt="Flujo de trabajo Git" class="img-fluid rounded mb-3">
+                <p>El flujo de trabajo básico en Git consiste en modificar archivos en tu directorio de trabajo, agregar esos cambios al área de preparación (staging), y luego hacer commit para confirmar esos cambios al historial del proyecto.</p>
+            </div>
+            
+            <!-- Segundo componente Bootstrap: Cards -->
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="https://via.placeholder.com/300x200?text=Local+Repository" class="card-img-top" alt="Repositorio local">
+                        <div class="card-body">
+                            <h5 class="card-title">Repositorio Local</h5>
+                            <p class="card-text">El repositorio local es donde Git almacena todos los metadatos y la base de datos de objetos para tu proyecto. Es la parte más importante de Git y es lo que se copia cuando clonas un repositorio de otra computadora.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="https://via.placeholder.com/300x200?text=Staging+Area" class="card-img-top" alt="Área de preparación">
+                        <div class="card-body">
+                            <h5 class="card-title">Área de Preparación</h5>
+                            <p class="card-text">El área de preparación es un archivo, generalmente contenido en tu directorio de Git, que almacena información sobre lo que va a ir en tu próximo commit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="https://via.placeholder.com/300x200?text=Remote+Repository" class="card-img-top" alt="Repositorio remoto">
+                        <div class="card-body">
+                            <h5 class="card-title">Repositorio Remoto</h5>
+                            <p class="card-text">Los repositorios remotos son versiones de tu proyecto que están alojadas en Internet o en alguna red. Puedes tener varios de ellos, cada uno de los cuales puede ser de sólo lectura o de lectura/escritura para ti.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
